@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "ECom.jpg",
       "idiom" : "universal"
     }
   ],

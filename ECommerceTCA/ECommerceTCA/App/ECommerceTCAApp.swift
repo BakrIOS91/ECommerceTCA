@@ -11,7 +11,14 @@ import SwiftUI
 struct ECommerceTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            Text(.localizable.language_Title)
+            SplashView(
+                store: .init(
+                    initialState: SplashFeature.State()
+                ){
+                    SplashFeature()
+                        ._printChanges()
+                }
+            )
         }
     }
 }
