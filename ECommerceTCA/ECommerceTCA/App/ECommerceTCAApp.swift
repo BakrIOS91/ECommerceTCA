@@ -11,7 +11,7 @@ import SwiftUI
 struct ECommerceTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            EmptyView()
+            Text(.localizable.language_Title)
         }
     }
 }

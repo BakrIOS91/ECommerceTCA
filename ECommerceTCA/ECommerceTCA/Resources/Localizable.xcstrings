@@ -1,5 +1,23 @@
 {
   "sourceLanguage" : "en",
-  "strings" : {},
+  "strings" : {
+    "language_Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرجاء تحديد لغتك المفضلة"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please select your preferred language"
+          }
+        }
+      }
+    }
+  },
   "version" : "1.0"
 }
