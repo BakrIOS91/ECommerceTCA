@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3CB222742B95EE5C003694BC /* ECommerceTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB222732B95EE5C003694BC /* ECommerceTCAApp.swift */; };
-		3CB222762B95EE5C003694BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB222752B95EE5C003694BC /* ContentView.swift */; };
-		3CB222782B95EE5D003694BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222772B95EE5D003694BC /* Assets.xcassets */; };
-		3CB2227B2B95EE5D003694BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB2227A2B95EE5D003694BC /* Preview Assets.xcassets */; };
+		3CB222782B95EE5D003694BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222772B95EE5D003694BC /* Images.xcassets */; };
 		3CB222852B95EE5D003694BC /* ECommerceTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB222842B95EE5D003694BC /* ECommerceTCATests.swift */; };
 		3CB2228F2B95EE5E003694BC /* ECommerceTCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB2228E2B95EE5E003694BC /* ECommerceTCAUITests.swift */; };
 		3CB222912B95EE5E003694BC /* ECommerceTCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB222902B95EE5E003694BC /* ECommerceTCAUITestsLaunchTests.swift */; };
+		3CB222A02B95F8F3003694BC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB2229F2B95F8F3003694BC /* Colors.xcassets */; };
+		3CB222A22B95F979003694BC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222A12B95F979003694BC /* Localizable.xcstrings */; };
+		3CB222A52B95F9A6003694BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222A42B95F9A6003694BC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +37,16 @@
 /* Begin PBXFileReference section */
 		3CB222702B95EE5C003694BC /* ECommerceTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB222732B95EE5C003694BC /* ECommerceTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceTCAApp.swift; sourceTree = "<group>"; };
-		3CB222752B95EE5C003694BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3CB222772B95EE5D003694BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3CB2227A2B95EE5D003694BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CB222772B95EE5D003694BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3CB222802B95EE5D003694BC /* ECommerceTCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceTCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB222842B95EE5D003694BC /* ECommerceTCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceTCATests.swift; sourceTree = "<group>"; };
 		3CB2228A2B95EE5E003694BC /* ECommerceTCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceTCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB2228E2B95EE5E003694BC /* ECommerceTCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceTCAUITests.swift; sourceTree = "<group>"; };
 		3CB222902B95EE5E003694BC /* ECommerceTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CB2229F2B95F8F3003694BC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		3CB222A12B95F979003694BC /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		3CB222A42B95F9A6003694BC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3CB222A62B95F9F0003694BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +97,11 @@
 		3CB222722B95EE5C003694BC /* ECommerceTCA */ = {
 			isa = PBXGroup;
 			children = (
-				3CB222732B95EE5C003694BC /* ECommerceTCAApp.swift */,
-				3CB222752B95EE5C003694BC /* ContentView.swift */,
-				3CB222772B95EE5D003694BC /* Assets.xcassets */,
-				3CB222792B95EE5D003694BC /* Preview Content */,
+				3CB222A32B95F991003694BC /* LaunchScreen */,
+				3CB2229E2B95F2FE003694BC /* Resources */,
+				3CB2229D2B95F2F8003694BC /* App */,
 			);
 			path = ECommerceTCA;
-			sourceTree = "<group>";
-		};
-		3CB222792B95EE5D003694BC /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3CB2227A2B95EE5D003694BC /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		3CB222832B95EE5D003694BC /* ECommerceTCATests */ = {
@@ -125,6 +119,33 @@
 				3CB222902B95EE5E003694BC /* ECommerceTCAUITestsLaunchTests.swift */,
 			);
 			path = ECommerceTCAUITests;
+			sourceTree = "<group>";
+		};
+		3CB2229D2B95F2F8003694BC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3CB222A62B95F9F0003694BC /* Info.plist */,
+				3CB222732B95EE5C003694BC /* ECommerceTCAApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3CB2229E2B95F2FE003694BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3CB222772B95EE5D003694BC /* Images.xcassets */,
+				3CB2229F2B95F8F3003694BC /* Colors.xcassets */,
+				3CB222A12B95F979003694BC /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3CB222A32B95F991003694BC /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3CB222A42B95F9A6003694BC /* Launch Screen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +234,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				de,
 			);
 			mainGroup = 3CB222672B95EE5C003694BC;
 			productRefGroup = 3CB222712B95EE5C003694BC /* Products */;
@@ -231,8 +254,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CB2227B2B95EE5D003694BC /* Preview Assets.xcassets in Resources */,
-				3CB222782B95EE5D003694BC /* Assets.xcassets in Resources */,
+				3CB222A02B95F8F3003694BC /* Colors.xcassets in Resources */,
+				3CB222782B95EE5D003694BC /* Images.xcassets in Resources */,
+				3CB222A52B95F9A6003694BC /* Launch Screen.storyboard in Resources */,
+				3CB222A22B95F979003694BC /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CB222762B95EE5C003694BC /* ContentView.swift in Sources */,
 				3CB222742B95EE5C003694BC /* ECommerceTCAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -421,15 +445,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ECommerceTCA/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = JPMQ9K77T6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ECommerceTCA/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ECommerceTCA;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +465,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.BM.TCA.ECommerceTCA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,15 +482,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ECommerceTCA/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = JPMQ9K77T6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ECommerceTCA/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ECommerceTCA;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,9 +502,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.BM.TCA.ECommerceTCA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
