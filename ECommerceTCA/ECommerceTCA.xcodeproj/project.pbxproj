@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C7C50402B96113700FB260B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7C503F2B96113700FB260B /* Colors.xcassets */; };
 		3CB222742B95EE5C003694BC /* ECommerceTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB222732B95EE5C003694BC /* ECommerceTCAApp.swift */; };
 		3CB222782B95EE5D003694BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222772B95EE5D003694BC /* Images.xcassets */; };
 		3CB222852B95EE5D003694BC /* ECommerceTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB222842B95EE5D003694BC /* ECommerceTCATests.swift */; };
 		3CB2228F2B95EE5E003694BC /* ECommerceTCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB2228E2B95EE5E003694BC /* ECommerceTCAUITests.swift */; };
 		3CB222912B95EE5E003694BC /* ECommerceTCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB222902B95EE5E003694BC /* ECommerceTCAUITestsLaunchTests.swift */; };
-		3CB222A02B95F8F3003694BC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB2229F2B95F8F3003694BC /* Colors.xcassets */; };
 		3CB222A22B95F979003694BC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222A12B95F979003694BC /* Localizable.xcstrings */; };
 		3CB222A52B95F9A6003694BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222A42B95F9A6003694BC /* Launch Screen.storyboard */; };
 		3CB222A92B95FB01003694BC /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB222A82B95FB01003694BC /* ComposableArchitecture */; };
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C7C503F2B96113700FB260B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3CB222702B95EE5C003694BC /* ECommerceTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB222732B95EE5C003694BC /* ECommerceTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceTCAApp.swift; sourceTree = "<group>"; };
 		3CB222772B95EE5D003694BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		3CB2228A2B95EE5E003694BC /* ECommerceTCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceTCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB2228E2B95EE5E003694BC /* ECommerceTCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceTCAUITests.swift; sourceTree = "<group>"; };
 		3CB222902B95EE5E003694BC /* ECommerceTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3CB2229F2B95F8F3003694BC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3CB222A12B95F979003694BC /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		3CB222A42B95F9A6003694BC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3CB222A62B95F9F0003694BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,9 +139,9 @@
 		3CB2229E2B95F2FE003694BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3CB222772B95EE5D003694BC /* Images.xcassets */,
-				3CB2229F2B95F8F3003694BC /* Colors.xcassets */,
 				3CB222A12B95F979003694BC /* Localizable.xcstrings */,
+				3CB222772B95EE5D003694BC /* Images.xcassets */,
+				3C7C503F2B96113700FB260B /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -270,8 +270,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CB222A02B95F8F3003694BC /* Colors.xcassets in Resources */,
 				3CB222782B95EE5D003694BC /* Images.xcassets in Resources */,
+				3C7C50402B96113700FB260B /* Colors.xcassets in Resources */,
 				3CB222A52B95F9A6003694BC /* Launch Screen.storyboard in Resources */,
 				3CB222A22B95F979003694BC /* Localizable.xcstrings in Resources */,
 			);
