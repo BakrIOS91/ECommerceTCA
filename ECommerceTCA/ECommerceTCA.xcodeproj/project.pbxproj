@@ -15,6 +15,9 @@
 		3CB222A02B95F8F3003694BC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB2229F2B95F8F3003694BC /* Colors.xcassets */; };
 		3CB222A22B95F979003694BC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222A12B95F979003694BC /* Localizable.xcstrings */; };
 		3CB222A52B95F9A6003694BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB222A42B95F9A6003694BC /* Launch Screen.storyboard */; };
+		3CB222A92B95FB01003694BC /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB222A82B95FB01003694BC /* ComposableArchitecture */; };
+		3CB222AC2B95FB24003694BC /* BMSwiftNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB222AB2B95FB24003694BC /* BMSwiftNetworking */; };
+		3CB222AF2B95FB4D003694BC /* BMSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB222AE2B95FB4D003694BC /* BMSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB222A92B95FB01003694BC /* ComposableArchitecture in Frameworks */,
+				3CB222AF2B95FB4D003694BC /* BMSwiftUI in Frameworks */,
+				3CB222AC2B95FB24003694BC /* BMSwiftNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +170,11 @@
 			dependencies = (
 			);
 			name = ECommerceTCA;
+			packageProductDependencies = (
+				3CB222A82B95FB01003694BC /* ComposableArchitecture */,
+				3CB222AB2B95FB24003694BC /* BMSwiftNetworking */,
+				3CB222AE2B95FB4D003694BC /* BMSwiftUI */,
+			);
 			productName = ECommerceTCA;
 			productReference = 3CB222702B95EE5C003694BC /* ECommerceTCA.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +249,11 @@
 				de,
 			);
 			mainGroup = 3CB222672B95EE5C003694BC;
+			packageReferences = (
+				3CB222A72B95FB01003694BC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				3CB222AA2B95FB24003694BC /* XCRemoteSwiftPackageReference "BMSwiftNetworking" */,
+				3CB222AD2B95FB4D003694BC /* XCRemoteSwiftPackageReference "BMSwiftUI" */,
+			);
 			productRefGroup = 3CB222712B95EE5C003694BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -628,6 +644,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CB222A72B95FB01003694BC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.1;
+			};
+		};
+		3CB222AA2B95FB24003694BC /* XCRemoteSwiftPackageReference "BMSwiftNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BakrIOS91/BMSwiftNetworking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		3CB222AD2B95FB4D003694BC /* XCRemoteSwiftPackageReference "BMSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BakrIOS91/BMSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CB222A82B95FB01003694BC /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CB222A72B95FB01003694BC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		3CB222AB2B95FB24003694BC /* BMSwiftNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CB222AA2B95FB24003694BC /* XCRemoteSwiftPackageReference "BMSwiftNetworking" */;
+			productName = BMSwiftNetworking;
+		};
+		3CB222AE2B95FB4D003694BC /* BMSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CB222AD2B95FB4D003694BC /* XCRemoteSwiftPackageReference "BMSwiftUI" */;
+			productName = BMSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3CB222682B95EE5C003694BC /* Project object */;
 }
