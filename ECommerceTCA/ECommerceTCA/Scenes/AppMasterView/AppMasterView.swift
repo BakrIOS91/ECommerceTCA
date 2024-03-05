@@ -9,11 +9,12 @@ import SwiftUI
 import ComposableArchitecture
 
 @Reducer
-struct SplashFeature {
+struct AppMasterFeature {
     
     @ObservableState
     struct State {
-        
+        @Shared(.appStorage(AppConstants.PreferencesKeys.appRootView))
+        var appRootView: AppRootView = .splash
     }
     
     enum Action: BindableAction {
@@ -22,12 +23,19 @@ struct SplashFeature {
     
     var body: some ReducerOf<Self> {
         BindingReducer()
+        
+        Reduce { state, action in
+            switch action {
+                case .binding:
+                    return .none
+            }
+        }
     }
     
 }
 
-struct SplashView: View {
-    @Perception.Bindable var store: StoreOf<SplashFeature>
+struct AppMasterView: View {
+    @Perception.Bindable var store: StoreOf<AppMasterFeature>
     
     var body: some View {
         WithPerceptionTracking {
@@ -56,11 +64,11 @@ struct SplashView: View {
 }
 
 #Preview {
-    SplashView(
+    AppMasterView(
         store: .init(
-            initialState: SplashFeature.State()
+            initialState: AppMasterFeature.State()
         ){
-            SplashFeature()
+            AppMasterFeature()
         }
     )
 }
