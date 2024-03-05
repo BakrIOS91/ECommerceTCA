@@ -11,11 +11,11 @@ import SwiftUI
 struct ECommerceTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashView(
+            AppMasterView(
                 store: .init(
-                    initialState: SplashFeature.State()
+                    initialState: AppMasterFeature.State()
                 ){
-                    SplashFeature()
+                    AppMasterFeature()
                         ._printChanges()
                 }
             )
