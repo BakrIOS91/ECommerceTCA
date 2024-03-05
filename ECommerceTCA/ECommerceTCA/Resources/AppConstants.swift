@@ -11,6 +11,7 @@ struct AppConstants {
     
     struct PreferencesKeys {
         static let appRootView: String = "kAppRootView"
+        static let appLanguage: String = "kAppLanguage"
     }
     
 }

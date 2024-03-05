@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct ECommerceTCAApp: App {
+    @Shared(.fileStorage(URL.documentsDirectory.appending(path: AppConstants.PreferencesKeys.appLanguage)))
+    var appLanguage: Locale = .bestMatching
+    
     var body: some Scene {
         WindowGroup {
             AppMasterView(
@@ -19,6 +23,7 @@ struct ECommerceTCAApp: App {
                         ._printChanges()
                 }
             )
+            .environment(\.locale, appLanguage)
         }
     }
 }
