@@ -9,7 +9,7 @@ import Foundation
 import BMSwiftUI
 import SwiftUI
 
-enum AppRootView: String {
+enum AppRootView: String, Codable {
     case language
     case login
     case root

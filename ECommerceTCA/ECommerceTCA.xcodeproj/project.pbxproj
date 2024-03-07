@@ -88,13 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C66F74B2B9711AD00EF78B6 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		3C66F75B2B97247F00EF78B6 /* LanguageSelectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +139,6 @@
 				3C7C504F2B96215100FB260B /* Scenes */,
 				3CB222A32B95F991003694BC /* LaunchScreen */,
 				3CB2229E2B95F2FE003694BC /* Resources */,
-				3C66F74B2B9711AD00EF78B6 /* Helpers */,
 				3CB2229D2B95F2F8003694BC /* App */,
 			);
 			path = ECommerceTCA;

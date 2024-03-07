@@ -15,8 +15,11 @@ struct AppMasterFeature {
     @ObservableState
     struct State {
         @Shared(.appStorage(AppConstants.PreferencesKeys.appRootView))
-        var appRootView: AppRootView = .language
-        var contentView: AppRootView?
+        var appRootView: AppRootView? = nil
+        
+        @Shared(.fileStorage(URL.documentsDirectory.appending(path: AppConstants.PreferencesKeys.appLanguage)))
+        var appLocale: Locale = .bestMatching
+
         var languageState: LanguageSelectionFeature.State?
     }
     
@@ -37,14 +40,18 @@ struct AppMasterFeature {
                     switch state.appRootView {
                         case .language:
                             state.languageState = .init()
-                            state.contentView = .language
+                            state.appRootView = .language
                         default:
-                            break
+                            state.languageState = .init()
+                            state.appRootView = .language
                     }
                     return .none
                 case .languageAction:
                     return .none
             }
+        }
+        .ifLet(\.languageState, action: \.languageAction) {
+            LanguageSelectionFeature()
         }
     }
     
@@ -55,44 +62,45 @@ struct AppMasterView: View {
     
     var body: some View {
         WithPerceptionTracking {
-            Unwrap(store.contentView) { contentView in
-                switch contentView {
-                    case .language:
-                        Unwrap(
-                            store.scope(
+            ZStack {
+                if let contentView = store.appRootView {
+                    switch contentView {
+                        case .language:
+                            if let langStore = store.scope(
                                 state: \.languageState,
                                 action: \.languageAction
-                            )
-                        ) {
-                            LanguageSelectionView(store: $0)
-                        }
-                    default:
-                        EmptyView()
-                }
-            } fallbackContent: {
-                ZStack {
-                    Color.appMain.ignoresSafeArea(.all)
-                    
-                    Image(.appLogo)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(
-                            width: 240,
-                            height: 128,
-                            alignment: .center
-                        )
-                    
-                    VStack {
-                        Spacer()
+                            ) {
+                                LanguageSelectionView(store: langStore)
+                            }
+                        default:
+                            EmptyView()
+                    }
+                } else {
+                    ZStack {
+                        Color.appMain.ignoresSafeArea(.all)
                         
-                        ProgressView()
-                            .progressViewStyle(.circular)
-                            .tint(.white)
+                        Image(.appLogo)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(
+                                width: 240,
+                                height: 128,
+                                alignment: .center
+                            )
+                        
+                        VStack {
+                            Spacer()
+                            
+                            ProgressView()
+                                .progressViewStyle(.circular)
+                                .tint(.white)
+                        }
                     }
                 }
-                .onAppear {
-                    store.send(.updateView)
-                }
+            }
+            .locale(store.appLocale)
+            .onAppear {
+                store.send(.updateView)
             }
         }
     }

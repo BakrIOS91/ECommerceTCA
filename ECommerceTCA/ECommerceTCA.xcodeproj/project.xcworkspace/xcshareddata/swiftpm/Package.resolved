@@ -1,4 +1,5 @@
 {
+  "originHash" : "ca4036f0542e0a1941a3235797bdefc6f3558318b6654ef90709eca0f1bb7311",
   "pins" : [
     {
       "identity" : "bmswiftnetworking",
@@ -60,7 +61,7 @@
       "location" : "https://github.com/pointfreeco/swift-composable-architecture.git",
       "state" : {
         "branch" : "shared-state-beta",
-        "revision" : "36e5737243582851030eaa2383ae1b751c24913a"
+        "revision" : "a50f9c165447518535237a101dbf6b53144c2b00"
       }
     },
     {
@@ -145,5 +146,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

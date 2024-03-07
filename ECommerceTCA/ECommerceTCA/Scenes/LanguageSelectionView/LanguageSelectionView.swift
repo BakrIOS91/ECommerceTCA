@@ -11,17 +11,11 @@ import ComposableArchitecture
 
 @Reducer
 struct LanguageSelectionFeature {
-    
     @ObservableState
     struct State {
-        @Shared(
-            .fileStorage(
-                URL.documentsDirectory.appending(
-                    path: AppConstants.PreferencesKeys.appLanguage
-                )
-            )
-        )
-        var appLanguage: Locale = .bestMatching
+        @Shared(.fileStorage(URL.documentsDirectory.appending(path: AppConstants.PreferencesKeys.appLanguage)))
+        var appLocale: Locale = .bestMatching
+
     }
     
     enum Action: BindableAction {
@@ -30,14 +24,13 @@ struct LanguageSelectionFeature {
     }
     
     var body: some ReducerOf<Self> {
-        BindingReducer()
         
         Reduce { state, action in
             switch action {
                 case .binding:
                     return .none
                 case let .setLanguage(locale):
-                    state.appLanguage = locale
+                    state.appLocale = locale
                     return .none
             }
         }
@@ -63,7 +56,7 @@ struct LanguageShape: Shape {
 
 struct LanguageSelectionView: View {
     @Perception.Bindable var store: StoreOf<LanguageSelectionFeature>
-    
+
     
     var body: some View {
         WithPerceptionTracking {
